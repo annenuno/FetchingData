@@ -1,6 +1,35 @@
 <template>
   <div>
-    <NuxtWelcome />
-    <div>Hola </div>
+    <div class="h-screen relative overflow-hidden">
+      <img />
+      <div class="absolute w-full h-full top-0 overlay"/>
+      <div class="absolute w-full h-full top-0 p-48">
+
+        <div class="flex justify-between">
+          <div>
+            <h1 class="text-7xl text-white">Toronto</h1>
+            <p class="font-extralight text-2xl mt-2 text-white">Sunday Dec 4th</p>
+            <img class="w-56 icon" />
+          </div>
+          <div>
+            <p class="text-9xl text-white font-extralight">
+              53°
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-20">
+          <input type="text" class="w-1/2 h-10 px-4" placeholder="Search a city"/>
+          <button class="bg-cyan-500 w-20 text-white h-10">Search</button>
+        </div>
+
+      </div>
+    </div>
   </div>
 </template>
+
+<style scoped>
+.overlay  {
+  background-color: #AAA196;
+}
+</style>
