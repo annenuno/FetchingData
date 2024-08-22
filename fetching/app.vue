@@ -66,7 +66,7 @@ const handleClick = () => {
         class="bg-white absolute inset-x-0 bottom-0 w-11/12 h-1/2 rounded-t-2xl mx-auto"
       >
         <div class="flex flex-row gap-5 p-10 something">
-          <div class="w-2/5 h-full bg-slate-200 rounded-xl p-10">
+          <div class="w-2/5 h-full bg-slate-200 rounded-xl p-8">
             <div class="flex justify-center text-3xl">{{ city.main.temp }}</div>
             <div class="flex justify-center">
               <img
