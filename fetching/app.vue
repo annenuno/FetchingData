@@ -48,9 +48,9 @@ const handleClick = () => {
 <template>
   <div>
     <div class="relative h-screen w-screen overlay mx-auto">
-      <div class="flex flex-col justify-center pt-60">
+      <div class="flex flex-col justify-center pt-20 md:pt-60">
         <h1 class="flex justify-center text-white text-7xl">{{ city.name }}</h1>
-        <div class="flex justify-center mt-20">
+        <div class="flex justify-center mt-16 md:mt-20">
           <input
             type="text"
             class="w-1/2 h-10 px-4"
@@ -63,39 +63,39 @@ const handleClick = () => {
         </div>
       </div>
       <div
-        class="bg-slate absolute inset-x-0 bottom-0 w-11/12 h-1/2 rounded-t-2xl mx-auto"
+        class="bg-slate overflow-auto absolute inset-x-0 bottom-0 w-11/12 h-4/6 md:h-1/2 rounded-t-2xl mx-auto"
       >
-        <div class="flex flex-row gap-5 p-10 something">
-          <div class="w-2/5 h-full bg-mist rounded-xl p-10">
+        <div class="flex flex-col xl:flex-row gap-5 p-10 something">
+          <div class="h-2/5 xl:h-full xl:w-2/5 bg-mist rounded-xl p-10">
             <div class="flex justify-center text-3xl">{{ city.main.temp }}</div>
-            <div class="flex justify-center">
+            <!-- <div class="flex justify-center">
               <img
                 :src="`https://openweathermap.org/img/wn/${city.weather[0].icon}@4x.png`"
                 class="w-56 icon"
               />
-            </div>
+            </div> -->
           </div>
-          <div class="flex flex-col gap-5 w-3/5">
-            <div class="flex flex-row gap-5 h-1/2">
-              <div class="w-1/3 bg-mist rounded-xl text-keylime">
+          <div class="flex flex-col gap-5 h-3/5 xl:h-full xl:w-3/5">
+            <div class="flex flex-col md:flex-row gap-5 h-1/2">
+              <div class="md:w-1/3 bg-mist rounded-xl text-keylime p-10">
                 Feels like
                 {{ city.main.feels_like }}
               </div>
-              <div class="w-1/3 bg-mist rounded-xl">
+              <div class="md:w-1/3 bg-mist rounded-xl p-10">
                 Temp Min {{ city.main.temp_min }}
               </div>
-              <div class="w-1/3 bg-mist rounded-xl">
+              <div class="md:w-1/3 bg-mist rounded-xl p-10">
                 Temp Max {{ city.main.temp_max }}
               </div>
             </div>
-            <div class="flex flex-row gap-5 h-1/2">
-              <div class="w-1/3 bg-mist rounded-xl">
+            <div class="flex flex-col md:flex-row gap-5 h-1/2">
+              <div class="md:w-1/3 bg-mist rounded-xl p-10">
                 Pressure {{ city.main.pressure }}
               </div>
-              <div class="w-1/3 bg-mist rounded-xl">
+              <div class="md:w-1/3 bg-mist rounded-xl p-10">
                 Humidity {{ city.main.humidity }}
               </div>
-              <div class="w-1/3 bg-mist rounded-xl">
+              <div class="md:w-1/3 bg-mist rounded-xl p-10">
                 Sea Level{{ city.main.sea_level }}, Ground Level
                 {{ city.main.grnd_level }}
               </div>
