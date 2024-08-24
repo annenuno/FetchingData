@@ -63,10 +63,10 @@ const handleClick = () => {
         </div>
       </div>
       <div
-        class="bg-white absolute inset-x-0 bottom-0 w-11/12 h-1/2 rounded-t-2xl mx-auto"
+        class="bg-slate absolute inset-x-0 bottom-0 w-11/12 h-1/2 rounded-t-2xl mx-auto"
       >
         <div class="flex flex-row gap-5 p-10 something">
-          <div class="w-2/5 h-full bg-slate-200 rounded-xl p-10">
+          <div class="w-2/5 h-full bg-mist rounded-xl p-10">
             <div class="flex justify-center text-3xl">{{ city.main.temp }}</div>
             <div class="flex justify-center">
               <img
@@ -77,25 +77,25 @@ const handleClick = () => {
           </div>
           <div class="flex flex-col gap-5 w-3/5">
             <div class="flex flex-row gap-5 h-1/2">
-              <div class="w-1/3 bg-slate-200 rounded-xl">
+              <div class="w-1/3 bg-mist rounded-xl text-keylime">
                 Feels like
                 {{ city.main.feels_like }}
               </div>
-              <div class="w-1/3 bg-slate-200 rounded-xl">
+              <div class="w-1/3 bg-mist rounded-xl">
                 Temp Min {{ city.main.temp_min }}
               </div>
-              <div class="w-1/3 bg-slate-200 rounded-xl">
+              <div class="w-1/3 bg-mist rounded-xl">
                 Temp Max {{ city.main.temp_max }}
               </div>
             </div>
             <div class="flex flex-row gap-5 h-1/2">
-              <div class="w-1/3 bg-slate-200 rounded-xl">
+              <div class="w-1/3 bg-mist rounded-xl">
                 Pressure {{ city.main.pressure }}
               </div>
-              <div class="w-1/3 bg-slate-200 rounded-xl">
+              <div class="w-1/3 bg-mist rounded-xl">
                 Humidity {{ city.main.humidity }}
               </div>
-              <div class="w-1/3 bg-slate-200 rounded-xl">
+              <div class="w-1/3 bg-mist rounded-xl">
                 Sea Level{{ city.main.sea_level }}, Ground Level
                 {{ city.main.grnd_level }}
               </div>
